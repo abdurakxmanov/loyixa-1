@@ -1,0 +1,757 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.to-top-header{
+    width: 100%;
+    height: 50px;
+    background-color: #e1f0fd;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.locations{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: locations 1s ease forwards;
+    visibility: hidden;
+}
+
+.locations a{
+    color: black;
+    padding-right: 10px;
+    transition: color 0.3s linear;
+}
+
+.locations a:hover{
+    color: blue;
+}
+
+.kuryer{
+    opacity: 0.5;
+    animation: kuryer 1s linear forwards;
+    visibility: hidden;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #484848;
+    animation: question 1s ease forwards;
+    visibility: hidden;
+}
+
+.question h4, img:hover{
+    cursor: pointer;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    color: black;
+}
+
+.to-top-header{
+    font-size: 13px;
+}
+
+@keyframes locations {
+    0%{
+        transform: translateX(-400px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes kuryer {
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes question {
+    0%{
+        transform: translateX(400px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+.top-header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.logo{
+    animation: logo 1s ease-in forwards;
+    visibility: hidden;
+}
+
+.katalog{
+    display: flex;
+    align-items: center;
+    background-color: #e6dcef;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #8d17f4;
+    transition: color 0.3s linear; 
+    animation: katalog 1s ease-in forwards;
+    visibility: hidden;
+}
+
+.katalog:hover{
+    color: #6206b4;
+    cursor: pointer;
+}
+
+.inputs{
+    position: relative;
+    animation: inputs 1s ease-out forwards;
+    visibility: hidden;
+}
+
+.inputs input{
+    padding: 10px 150px 10px 10px;
+    border-radius: 5px;
+}
+
+.inputs i{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: #e1f0fd;
+    padding: 10px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.informations, .information{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: color 0.3s linear;
+}
+
+.informations{
+    gap: 20px;
+    animation: informations 1s ease-in forwards;
+    visibility: hidden;
+}
+
+.information:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+@keyframes logo {
+    0%{
+        transform: translateX(-500px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes katalog {
+    0%{
+        transform: translateX(-500px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes informations {
+    0%{
+        transform: translateX(500px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes inputs {
+    0%{
+        transform: translateY(-300px);
+    }
+
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.credit{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: credit 1s ease-in-out forwards;
+    visibility: hidden;
+}
+
+nav ul{
+    display: flex;
+    font-size: 10px;
+    gap: 20px;
+    font-weight: bold;
+    color: #484848;
+    animation: nav-ul 1s linear forwards;
+    visibility: hidden;
+}
+
+nav ul li{
+    transition: color 0.3s linear;
+}
+
+nav ul li:hover{
+    color: #8d17f4;
+    cursor: pointer;
+}
+
+.more{
+    display: flex;
+    font-size: 13px;
+    color: #484848;
+    animation: more 1s ease-in-out forwards;
+    visibility: hidden;
+}
+
+.more:hover{
+    cursor: pointer;
+}
+
+@keyframes credit {
+    0%{
+        transform: translateX(-300px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes nav-ul {
+    0%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes more {
+    0%{
+        transform: translateX(300px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+/* .top-header{
+    position: sticky;
+    top: -1px;
+    background-color: white;
+    z-index: 1;
+} */
+
+/* header{
+    position: sticky;
+    top: 70px;
+    z-index: 2;
+    background-color: white;
+} */
+
+
+main img{
+    width: 88%;
+    height: auto;
+    margin:  0 70px 30px 70px;
+    border-radius: 10px;
+    animation: main-img 1s linear forwards;
+    visibility: hidden;
+}
+
+@keyframes main-img {
+    0%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+
+.cards{
+    width: 100%;
+    height: auto;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes{
+    display: flex;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.product{
+    position: relative;
+    width: 230px;
+    height: 310px;
+    animation: product 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 1s;
+}
+
+.card{
+    transition: padding 0.3s linear, box-shadow 0.3s linear, background-color 0.3s linear;
+}
+
+.card:hover{
+    border: 2px solid #f7f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.3s linear;
+}
+
+.product i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.product h5{
+    position: absolute;
+    background-color: #8d17f4;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 0px;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    animation: products 2s ease forwards;
+    visibility: hidden;
+}
+
+.products img{
+    padding-top: 5px;
+}
+
+.card p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.card h6, p{
+    animation: sales 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 1s;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    animation: sales 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.icons i{
+    color: #ff9100;
+    padding-top: 5px;
+}
+
+.icons p{
+    opacity: 0.5;
+}
+
+.card h6{
+    font-size: 13px;
+    background-color: yellow;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.sales{
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    animation: sales 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.sale h4{
+    font-size: 18px;
+    padding-top: 3px;
+}
+.sale h5{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.more-see h4{
+    padding: 10px 150px;
+    background-color: #e1f0fd;
+    display: inline-block;
+    border-radius: 5px;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.more-see{
+    display: flex;
+    justify-content: center;
+    animation: sales 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.more-see h4:hover{
+    color: blue;
+    background-color: #f4f8fc;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+    animation: footer 1.5s ease-in forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.nav-links h3, ul li{
+    padding: 10px 0;
+}
+
+.store{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 30px 30px;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    border-top: 1px solid #bcbcbc;
+    animation: bottom-f 1.5s ease-in forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.bottom-footer h3{
+    font-size: 12px;
+}
+
+.h3-h3{
+    display: flex;
+    gap: 10px;
+}
+
+.opacity h3{
+    opacity: 0.5;
+}
+
+@keyframes product {
+    from{
+        transform: translateX(500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes sales {
+    from{
+        transform: translateX(-500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes products {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes footer {
+    from{
+        transform: translateX(500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes bottom-f  {
+    from{
+        transform: translateX(-500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1150px) {
+    .top-header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .boxes{
+        flex-wrap: wrap;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        transform: scale(1.2);
+        margin: 50px 30px 70px 30px;
+        height: auto;
+    }
+
+    .boxes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        transform: scale(1.5);
+        margin: 120px 70px;
+    }
+
+    .products{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    .products img{
+        width: 50px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .to-top-header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    header ul{
+        flex-wrap: wrap;
+        font-size: 15px;
+        padding: 20px 20px 5px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main img{
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        width: 98%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .bottom-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    .card{
+        transform: scale(1.3);
+        margin: 80px 45px;
+    }
+}
+
+@media (max-width: 850px) {
+    .card{
+        transform: scale(1.2);
+        margin: 50px 23px;
+    }
+}
+
+@media (max-width: 755px) {
+    .card{
+        transform: scale(1.2);
+        margin: 50px 0 30px 0;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card{
+        transform: scale(1);
+        margin: 10px 0;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 663px) {
+    .card{
+        transform: scale(1.5);
+        margin: 120px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .more-see h4{
+        display: inline-block;
+        padding: 10px 30px;
+    }
+
+    .more-see{
+        display: flex;
+        justify-content: start;
+    }
+
+    .products h2{
+        font-size: 25px;
+    }
+
+    .products img{
+        width: 40px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 410px) {
+    .card{
+        transform: scale(1.1);
+        margin: 20px 0;
+    }
+
+    .products h2{
+        font-size: 18px;
+    }
+
+    .products img{
+        width: 30px;
+        height: 40px;
+    }
+}
